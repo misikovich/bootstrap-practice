@@ -1,8 +1,16 @@
-.header{
+/* .header {
+	position: relative;
+	background: transparent;
 	background-image: url('../img/top-banner.jpg');
 	background-attachment: fixed;
-	background-size: cover;
 	background-position: center;
 	height: 50vh;
-	position: relative;
+} */
+
+.header {
+	height: 50vh;
+}
+
+.none {
+	display: none !important;
 }

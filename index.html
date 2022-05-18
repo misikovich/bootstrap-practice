@@ -8,45 +8,84 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		  <div class="container">
-		    <a class="navbar-brand" href="#">Logo</a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">About</a>
-		        </li>
-				<li class="nav-item">
-		          <a class="nav-link" href="#">Portfolio</a>
-		        </li>
-				<li class="nav-item">
-		          <a class="nav-link" href="#">Blog</a>
-		        </li>
-				<li class="nav-item">
-				  <a class="nav-link" href="#">Contact</a>
-				</li>
-		      </ul>
-		      <form class="d-flex">
-		        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-		        <button class="btn btn-success" type="submit">Search</button>
-		      </form>
-		    </div>
-		  </div>
+		<!-- <img src="img/banner.jpg" alt="" class="none"> -->
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #071d31">
+			<div class="container">
+				<a class="navbar-brand text-primary" href="#">Logo</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-auto mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link acti" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-primary" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
 		</nav>
 		<!-- Header -->
-		<header class="header">
+		<header class="header d-flex align-items-center" data-parallax="scroll" data-img-src="/img/banner.jpg">
 			<div class="container">
-				<h1 class="text-success">Hello ,Welcome To My Planet</h1>
-				<p class="text-white">cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<a href="#" class="btn btn-lg btn-success">See more</a>
+				<div class="row">
+					<div class="col-md-6">
+						<h1 class="text-primary">Hello ,Welcome To My Planet</h1>
+						<p class="text-white">cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<a href="#" class="btn btn-lg btn-outline-primary">See more</a>
+					</div>
+				</div>
 			</div>
 		</header>
-
+		<!-- Main -->
+		<main>
+			<!-- About -->
+			<div id="about" class="py-5 border-bottom border-primary">
+				<h2 class="text-center">About</h2>
+				<div class="container">
+					<div class="row">
+						<div class="d-flex justify-content-sm-center col-md-2">
+							<img src="img/avatar.png" alt="Avatar" class="border border-primary rounded-circle img-fluid">
+						</div>
+						<div class="col-md-10">
+							<h3>Dr. Alien</h3>
+							<p>Ще не вмерли України, і слава, і воля, Ще нам, браття молодії, усміхнеться доля. Згинуть наші вороженьки, як роса на сонці, Запануєм і ми, браття, у своїй сторонці. Душу, тіло ми положим за нашу свободу. І покажем, що ми, браття, козацького роду.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Portfolio -->
+			<div id="portfolio" class="py-5 border-bottom border-primary">
+				<h2 class="text-center">Portfolio</h2>
+				<div class="album container py-4">
+					<div class="row row-cols-1 row-cols-md-3 row-cols-sm-1 g-md-3 g-sm-1">
+						<img src="img/portfolio/negr.jpeg" alt="" class="col shadow mb-sm-2 p-2 rounded" width="100%" height="225">
+						<img src="img/portfolio/artem.jpg" alt="" class="col shadow mb-sm-2 p-2 rounded" width="100%" height="225">
+						<img src="img/portfolio/ded.jpg" alt="" class="col shadow mb-sm-2 p-2 rounded" width="100%" height="225">
+						<img src="img/portfolio/shevcov1.jpeg" alt="" class="col shadow mb-sm-2 p-2 rounded" width="100%" height="225">
+						<img src="img/portfolio/ukr-shev.jpg" alt="" class="col shadow mb-sm-2 p-2 rounded" width="100%" height="225">
+					</div>
+				</div>
+			</div>
+		</main>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 		<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/parallax.min.js"></script>
+		<script src="js/scripts.js"></script>
 	</body>
 </html>

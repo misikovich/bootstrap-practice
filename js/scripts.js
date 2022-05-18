@@ -1,0 +1,1 @@
+$('.header').parallax({imageSrc: 'img/banner.jpg', speed: 0.4});
